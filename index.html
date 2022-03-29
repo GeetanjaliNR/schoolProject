@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font -->
+    <script
+      src="https://kit.fontawesome.com/5c8fba7655.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="top-menu-bg">
+      <div class="container top-menu">
+        <div class="right-menu">
+          <i class="fas fa-envelope email-logo"></i>
+          <a href="#" class="top-menu-content">littlesunshine@admin.com</a>
+          <i class="fas fa-phone-alt phone-logo"></i>
+          <a href="#" class="top-menu-content">+9741263300 </a>
+          <i class="fas fa-clock time-logo"></i>
+          <span class="top-menu-content">Open: 8am - 5am</span>
+        </div>
+        <div class="left-menu">
+          <!-- language -->
+          <div>
+            <i class="fas fa-globe language-logo"></i>
+            <!-- <button class="top-menu-content">Language</button> -->
+            <div class="btn-group me-2">
+              <span
+                class="dropdown-toggle language-btn"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Language
+              </span>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">English</li>
+                <li class="dropdown-item">French</li>
+                <li class="dropdown-item">Spanish</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- login -->
+          <div>
+            <i class="fas fa-unlock account-logo"></i>
+            <a
+              href="#"
+              class="top-menu-content"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              >Login</a
+            >
+            <span class="top-menu-content or-style me-1">or</span>
+            <a
+              href="#"
+              class="top-menu-content"
+              data-bs-toggle="modal"
+              data-bs-target="#createAccountModal"
+              >Create an account</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- nav menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <i class="fas fa-sun main-logo"></i>
+        <a class="navbar-brand school-name" href="#">LittleSunshine</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-content"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active nav-content" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown nav-content">
+              <a
+                class="nav-link nav-content active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admission
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Form</a></li>
+                <li><a class="dropdown-item" href="#">Waiting List</a></li>
+                <!-- <li><hr class="dropdown-divider" /></li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active nav-content" href="#">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Login Modal -->
+    <!-- Button trigger modal -->
+    <!-- Login -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="form-content">
+              <div>
+                <input
+                  type="text"
+                  placeholder="User name"
+                  class="form-control"
+                />
+              </div>
+              <div>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form-control"
+                />
+              </div>
+              <div>
+                <button class="form-control form-btn">LOG IN</button>
+              </div>
+              <div>
+                <a href="#">Forgot password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create an account modal  -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="createAccountModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Create An Account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="form-content">
+              <div>
+                <input type="text" placeholder="Name" class="form-control" />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="User name"
+                  class="form-control"
+                />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone" class="form-control" />
+              </div>
+              <div>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form-control"
+                />
+              </div>
+              <div>
+                <input
+                  type="password"
+                  placeholder="Re-Password"
+                  class="form-control"
+                />
+              </div>
+              <div>
+                <button class="form-control form-btn">Register</button>
+              </div>
+              <div>
+                <span>Already have an account?</span>
+                <a href="#">Log in</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousal -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-img1 carousel-img bg-info"></div>
+          <!-- <img src="..." class="d-block w-100" alt="..." /> -->
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Nature is the best teacher!</h5>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img2 carousel-img bg-info"></div>
+          <!-- <img src="..." class="d-block w-100" alt="..." /> -->
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img3 carousel-img bg-info"></div>
+          <!-- <img src="..." class="d-block w-100" alt="..." /> -->
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div> -->
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="card-style container">
+      <div class="card card-1">
+        <h5 class="card-title">Program</h5>
+        <p class="card-content">
+          Our programs are highly-customizable, allowing you to fully enroll
+          your child. Our programes include free library , game-based learning
+          tools, online homeschool options and much more..
+        </p>
+      </div>
+
+      <div class="card card-2">
+        <h5 class="card-title">Mission</h5>
+        <p class="card-content">
+          To create a safe, supportive, and nurturing learning environment for
+          all children, families, and staff which promotes social/emotional
+          competence as a foundation for developing the child.
+        </p>
+      </div>
+
+      <div class="card card-3">
+        <h5 class="card-title">Vision</h5>
+        <p class="card-content">
+          To provides a safe, developmentally appropriate, nurturing environment
+          that promotes social, emotional, cognitive and physical growth, as
+          well as a positive self-image and a love of learning.
+        </p>
+      </div>
+    </div>
+
+    <div class="features-part">
+      <!-- <div class="features"> -->
+      <span class="icon-left"></span>
+      <h2 class="feature-title">Our Features</h2>
+      <span class="icon-right"></span>
+      <!-- </div> -->
+    </div>
+
+    <div class="container section-3">
+      <div class="section-3-features">
+        <div class="feature-elements">
+          <span class="icon-img">
+            <i class="fas fa-graduation-cap feature1-icon-color"></i>
+          </span>
+          <div class="">
+            <span class="icon-title feature1-color">Experienced Teacher</span>
+            <br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              accusantium autem corrupti nihil labore reprehenderit!</span
+            >
+          </div>
+        </div>
+        <div class="feature-elements">
+          <span class="icon-img">
+            <i class="fas fa-leaf feature2-icon-color"></i>
+          </span>
+          <div>
+            <span class="icon-title feature2-color">Physical Activity</span
+            ><br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              accusantium autem corrupti nihil labore reprehenderit!</span
+            >
+          </div>
+        </div>
+        <div class="feature-elements">
+          <span class="icon-img">
+            <i class="fas fa-bus feature3-icon-color"></i>
+          </span>
+          <div>
+            <span class="icon-title feature3-color">Trasportation</span><br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              accusantium autem corrupti nihil labore reprehenderit!</span
+            >
+          </div>
+        </div>
+        <div class="feature-elements">
+          <span class="icon-img">
+            <i class="fas fa-utensils feature4-icon-color"></i>
+          </span>
+          <div>
+            <span class="icon-title feature4-color">Delicious Food</span><br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              accusantium autem corrupti nihil labore reprehenderit!</span
+            >
+          </div>
+        </div>
+        <div class="feature-elements">
+          <span class="icon-img">
+            <i class="fas fa-heart feature5-icon-color"></i>
+          </span>
+          <div>
+            <span class="icon-title feature5-color">Love & Care</span><br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              accusantium autem corrupti nihil labore reprehenderit!</span
+            >
+          </div>
+        </div>
+        <div class="feature-elements">
+          <span class="icon-img">
+            <i class="fas fa-baseball-ball feature6-icon-color"></i>
+          </span>
+          <div>
+            <span class="icon-title feature6-color">Annual Sport</span><br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              accusantium autem corrupti nihil labore reprehenderit!</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- parallax -->
+    <div class="mt-5 parallax-content">
+      <div class="parallax-img">
+        <div class="parallax-text">
+          <p class="info-parallax">Need More Information?</p>
+          <div class="btn-control">
+            <button class="btn btn-parallax">
+              <i class="fas fa-phone-alt"></i>
+              CONTACT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery -->
+    <div class="features-part">
+      <!-- <div class="features"> -->
+      <span class="icon-left"></span>
+      <h2 class="feature-title">Gallery</h2>
+      <span class="icon-right"></span>
+      <!-- </div> -->
+    </div>
+
+    <!-- gallery content -->
+    <div class="gallery-section">
+      <div class="gallery-content container">
+        <div class="gallery-img-holder">
+          <img src="./image/gallery-img1.jpeg" class="gallery-img" alt="" />
+        </div>
+        <div class="gallery-img-holder">
+          <img src="./image/gallery-img2.jpeg" class="gallery-img" alt="" />
+        </div>
+        <div class="gallery-img-holder">
+          <img src="./image/gallery-img3.jpeg" class="gallery-img" alt="" />
+        </div>
+        <div class="gallery-img-holder">
+          <img src="./image/gallery-img4.jpeg" class="gallery-img" alt="" />
+        </div>
+        <div class="gallery-img-holder">
+          <img src="./image/gallery-img5.jpeg" class="gallery-img" alt="" />
+        </div>
+        <div class="gallery-img-holder">
+          <img src="./image/gallery-img6.jpeg" class="gallery-img" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="school-footer">
+          <!-- part1 -->
+          <div>
+            <i class="fas fa-sun main-logo-footer"></i>
+            <a class="navbar-brand school-name-footer" href="#"
+              >LittleSunshine</a
+            >
+          </div>
+          <div class="school-contact">
+            <!-- <span>Contact us</span><br />  -->
+            <span>BankerStreet 52</span><br />
+            <span>110101 Delhi</span>
+          </div>
+        </div>
+        <!-- part2 -->
+        <div class="blog-categories">
+          <h4>Blog Categories</h4>
+          <div class="blog-content">
+            <span>Award</span>
+            <span>Education</span>
+            <span>News</span>
+            <span>Career</span>
+          </div>
+        </div>
+        <!-- part3 -->
+        <div class="mailing-list">
+          <h4>Mailing List</h4>
+          <p>Sign up for our mailing list to get latest updates and offer.</p>
+          <form action="">
+            <div class="footer-form">
+              <input
+                type="text"
+                class="form-control mail-input"
+                placeholder="Email address"
+              />
+              <button class="btn btn-mail"><i class="fas fa-check"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
